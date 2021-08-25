@@ -29,12 +29,70 @@ header {
     }
 }
 
-/*tablet
+/*tablet*/
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
     header {
-        font-size: 100px;
+        font-size: 35px;
     }
+
+    header h1 {
+        text-align: center;
+    }
+
+    .searchSection {
+        margin: auto -10px;
+    }
+
+    #location {
+        font-size: 40px;
+        display: flex;
+        background-color: #dddddd;    
+    }
+
+    .iconeLocation {
+        margin: 40px 35px 0px 30%;
+    }
+
+    #reservation {
+        background-color: #f1f0f0;
+        margin-top: -58px;
+        padding-bottom: 70px;
+    }
+
+    #reservation h2 {
+        font-size: 60px;
+        font-weight: 900;
+        width: 71%;
+        text-align: center;
+        margin-left: 14%;
+        padding-top: 100px;
+    }
+
+    #reservation p {
+        font-size: 21px;
+        font-weight: 300;
+        width: 90%;
+        margin-left: 5%;
+        text-align: center;
+    }
+
+    #boutonExplo {
+        background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+        border-radius: 70px;
+        box-shadow: 0 0 16px #0000002e;
+        width: 50%;
+        height: 120px;
+        margin: 70px 0px 0px 25%;
+        padding: 1px 0px 0px 0px;   
+    }
+
+    #boutonExplo p {
+        font-size: 35px;
+        font-weight: 700;
+        color: white;
+    }
+
 }
 
 /* Mobile*/
