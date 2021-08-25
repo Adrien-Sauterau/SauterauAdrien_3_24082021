@@ -7,7 +7,9 @@ header {
     font-family: 'Roboto', sans-serif;
 }
 
-
+a {
+    text-decoration: none;
+}
 
 
 
@@ -32,8 +34,15 @@ header {
 /*tablet*/
 
 @media (min-width: 768px) and (max-width: 991px) {
+    
+
+}
+
+/* Mobile*/
+
+@media only screen and (min-width: 350px) and (max-width: 767px) {
     header {
-        font-size: 35px;
+        font-size: 15px;
     }
 
     header h1 {
@@ -41,36 +50,36 @@ header {
     }
 
     .searchSection {
-        margin: auto -10px;
+        margin: -16px -10px;
     }
 
     #location {
-        font-size: 40px;
+        font-size: 15px;
         display: flex;
         background-color: #dddddd;    
     }
 
     .iconeLocation {
-        margin: 40px 35px 0px 30%;
+        margin: 17px 20px 0px 30%;
     }
 
     #reservation {
         background-color: #f1f0f0;
-        margin-top: -58px;
-        padding-bottom: 70px;
+        margin-top: -1px;
+        padding-bottom: 50px;
+        padding-top: 20px;
     }
 
     #reservation h2 {
-        font-size: 60px;
+        font-size: 25px;
         font-weight: 900;
         width: 71%;
         text-align: center;
         margin-left: 14%;
-        padding-top: 100px;
     }
 
     #reservation p {
-        font-size: 21px;
+        font-size: 16px;
         font-weight: 300;
         width: 90%;
         margin-left: 5%;
@@ -81,32 +90,72 @@ header {
         background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
         border-radius: 70px;
         box-shadow: 0 0 16px #0000002e;
-        width: 50%;
-        height: 120px;
-        margin: 70px 0px 0px 25%;
+        width: 60%;
+        height: 50px;
+        margin: 30px 0px 0px 20%;
         padding: 1px 0px 0px 0px;   
     }
 
     #boutonExplo p {
-        font-size: 35px;
+        font-size: 15px;
         font-weight: 700;
         color: white;
     }
 
-}
-
-/* Mobile*/
-
-@media only screen and (min-width: 350px) and (max-width: 767px) {
-    header {
-        font-size: 10px;
-    }
-    
-    p {
-        color: red;
+    #fonctionnement {
+        margin-top: 50px;
     }
 
-    .searchSection {
-        color: blue;
+    #fonctionnement h2 {
+        margin-left: 10px;
     }
+
+    #optionFonction {
+                
+    }
+
+    .option {
+        display: flex;
+        background-color: #f1f0f0;
+        border-radius: 25px;
+        height: 70px;
+        box-shadow: 0 0 16px #0000002e;
+        margin-bottom: 30px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .option2 {
+        background-color: #9356DC;
+        background: rgba(147,86,220, 0.2);
+    }
+
+    .option2 i {
+        color: #9356DC;
+    }
+
+    .rond {
+        background-color: #9356DC;
+        width: 17px;
+        height: 21px;
+        border-radius: 30px;
+        color: white;
+        padding: 3px 0px 0px 7px;
+        margin: 26px 0px 0px -12px;
+    }
+
+    .iconeOption {
+        font-size: 22px;
+        color: grey;
+        margin: 27px 0px 0px 30px;
+    }
+
+    .option p {
+        font-size: 17px;
+        font-weight: 700;
+        margin: 27px 0px 0px 25px;
+    }
+
+
+
 }
