@@ -43,20 +43,24 @@ a {
 @media only screen and (min-width: 350px) and (max-width: 767px) {
     header {
         font-size: 15px;
+        margin: auto -16px;
+        z-index: 3;
+        box-shadow: 0px 8px rgba(0 0 0 / 20%);
     }
 
     header h1 {
         text-align: center;
+        width: 100%;
     }
 
     .searchSection {
-        margin: -16px -10px;
+        margin: -17px -10px;
     }
 
     #location {
         font-size: 15px;
         display: flex;
-        background-color: #dddddd;    
+        background-color: #e7e7e7;    
     }
 
     .iconeLocation {
@@ -110,10 +114,6 @@ a {
         margin-left: 10px;
     }
 
-    #optionFonction {
-                
-    }
-
     .option {
         display: flex;
         background-color: #f1f0f0;
@@ -141,21 +141,43 @@ a {
         border-radius: 30px;
         color: white;
         padding: 3px 0px 0px 7px;
-        margin: 26px 0px 0px -12px;
+        margin: 24px 0px 0px -10px;
     }
 
     .iconeOption {
         font-size: 22px;
         color: grey;
-        margin: 27px 0px 0px 30px;
+        margin: 25px 0px 0px 30px;
     }
 
     .option p {
         font-size: 17px;
         font-weight: 700;
-        margin: 27px 0px 0px 25px;
+        margin: 26px 0px 0px 25px;
     }
 
+    #restaurants {
+        background-color: #f1f0f0;
+        margin: 50px -10px;
+    }
 
+    #restaurants h2 {
+        margin-left: 20px;
+        padding-top: 45px;
+    }
+
+    .descriptionRestau {
+        width: 90%;
+        margin-left: 5%;
+        background-color: white;
+        border-radius: 15px;
+        margin-top: 15px;
+        box-shadow: 0 0 16px #0000002e;
+    }
+
+    .descriptionRestau img {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
 
 }
