@@ -3,12 +3,133 @@ header {
     font-style: italic;
 }
 
-#all {
+body {
     font-family: 'Roboto', sans-serif;
 }
 
 a {
     text-decoration: none;
+}
+
+header {
+    z-index: 3;
+    box-shadow: 0px 8px rgba(0 0 0 / 20%);
+}
+
+#location {
+    display: flex;
+    background-color: #e7e7e7;    
+}
+
+#reservation {
+    background-color: #f1f0f0;
+}
+
+#boutonExplo {
+    background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+    border-radius: 70px;
+    box-shadow: 0 0 16px #0000002e; 
+}
+
+#boutonExplo p {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.option {
+    display: flex;
+    background-color: #f1f0f0;
+    border-radius: 25px;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.option2 {
+    background-color: #9356DC;
+    background: rgba(147,86,220, 0.2);
+}
+
+.option2 i {
+    color: #9356DC;
+}
+
+.rond {
+    background-color: #9356DC;
+    border-radius: 30px;
+    color: white;
+}
+
+.iconeOption {
+    color: grey;
+}
+
+#restaurants {
+    background-color: #f1f0f0;
+}
+
+#restaurants h2 {
+    margin-left: 20px;
+    padding-top: 45px;
+}
+
+.descriptionRestau {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 16px #0000002e;
+}
+
+.restauTexte {
+    display: flex;
+}
+
+.restauTitre a {
+    list-style: none;
+    color: black;
+}
+
+.restauTitre a:link {
+    color: #9356DC;
+}
+
+.restauTitre a:visited {
+    color: black;
+}
+
+.restauTitre a:focus {
+    color: #9356DC;
+}
+
+.restauTitre a:hover {
+    color: #9356DC;
+}
+
+.restauTitre a:active {
+    color: #9356DC;
+}
+
+footer {
+    background-color: #535353 ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+footer h4 {
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    font-weight: 300;
+}
+
+footer a {
+    list-style: none;
+}
+
+footer a:visited {
+    color: white;
+}
+
+.mentionFooter {
+    display: flex;
 }
 
 
@@ -17,18 +138,14 @@ a {
 /*large desktop*/ 
 
 @media (min-width: 1200px) {
-    header {
-        font-size: 100px;
-    }
+    
 
 }
 
 /*desktop*/ 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-    header {
-        font-size: 10px;
-    }
+    
 }
 
 /*tablet*/
@@ -43,9 +160,7 @@ a {
 @media only screen and (min-width: 350px) and (max-width: 767px) {
     header {
         font-size: 15px;
-        margin: auto -16px;
-        z-index: 3;
-        box-shadow: 0px 8px rgba(0 0 0 / 20%);
+        margin: auto -19px;
     }
 
     header h1 {
@@ -54,13 +169,11 @@ a {
     }
 
     .searchSection {
-        margin: -17px -16px;
+        margin: -17px -19px;
     }
 
     #location {
-        font-size: 15px;
-        display: flex;
-        background-color: #e7e7e7;    
+        font-size: 15px;   
     }
 
     .iconeLocation {
@@ -68,7 +181,6 @@ a {
     }
 
     #reservation {
-        background-color: #f1f0f0;
         margin-top: -1px;
         padding-bottom: 50px;
         padding-top: 20px;
@@ -91,9 +203,6 @@ a {
     }
 
     #boutonExplo {
-        background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
-        border-radius: 70px;
-        box-shadow: 0 0 16px #0000002e;
         width: 60%;
         height: 50px;
         margin: 30px 0px 0px 20%;
@@ -115,38 +224,21 @@ a {
     }
 
     .option {
-        display: flex;
-        background-color: #f1f0f0;
-        border-radius: 25px;
         height: 70px;
-        box-shadow: 0 0 16px #0000002e;
         margin-bottom: 30px;
         width: 90%;
         margin-left: 5%;
     }
 
-    .option2 {
-        background-color: #9356DC;
-        background: rgba(147,86,220, 0.2);
-    }
-
-    .option2 i {
-        color: #9356DC;
-    }
-
     .rond {
-        background-color: #9356DC;
         width: 17px;
         height: 21px;
-        border-radius: 30px;
-        color: white;
         padding: 3px 0px 0px 7px;
         margin: 24px 0px 0px -10px;
     }
 
     .iconeOption {
         font-size: 22px;
-        color: grey;
         margin: 25px 0px 0px 30px;
     }
 
@@ -157,23 +249,14 @@ a {
     }
 
     #restaurants {
-        background-color: #f1f0f0;
-        margin: 20px -16px;
+        margin: 20px -19px;
         height: 1310px;
-    }
-
-    #restaurants h2 {
-        margin-left: 20px;
-        padding-top: 45px;
     }
 
     .descriptionRestau {
         width: 90%;
         margin-left: 6%;
-        background-color: white;
-        border-radius: 15px;
         margin-top: 15px;
-        box-shadow: 0 0 16px #0000002e;
         height: 270px;
         margin-bottom: 30px;
     }
@@ -186,7 +269,6 @@ a {
 
     .restauTexte {
         height: 30%;
-        display: flex;
     }
     
     .restauTexte div {
@@ -208,31 +290,6 @@ a {
         font-weight: 100;
     }
 
-    .restauTitre a {
-        list-style: none;
-        color: black;
-    }
-
-    .restauTitre a:link {
-        color: #9356DC;
-    }
-
-    .restauTitre a:visited {
-        color: black;
-    }
-
-    .restauTitre a:focus {
-        color: #9356DC;
-    }
-
-    .restauTitre a:hover {
-        color: #9356DC;
-    }
-
-    .restauTitre a:active {
-        color: #9356DC;
-    }
-
     /*.fa-heart {
         color: white;
         border: 1px solid black;
@@ -247,5 +304,40 @@ a {
         color: #9356DC;
         cursor: pointer;
     }*/
+
+    footer {
+        width: 102%;
+        margin: -22px 0px -8px -8px;
+        padding: 0px 0px 0px 20px;
+    }
+
+    footer h4 {
+        margin-bottom: 0px;
+    }
+
+    footer p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .mentionFooter1 {
+        margin-bottom: -20px;
+    }
+
+    .mentionFooter2 {
+        margin-bottom: -20px;
+    }
+
+    #last {
+        margin-bottom: -20px;
+    }
+
+    .mentionFooter1 i {
+        margin: 14px 14px 0px 0px;
+    }
+
+    .mentionFooter2 i {
+        margin: 14px 7px 0px 0px;
+    }
 
 }
