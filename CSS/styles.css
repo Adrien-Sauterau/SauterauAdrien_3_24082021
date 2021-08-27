@@ -151,7 +151,12 @@ footer a:visited {
 /*tablet*/
 
 @media (min-width: 768px) and (max-width: 991px) {
-    
+    header {
+        font-size: 50px;
+        font-weight: 700;
+        text-align: center;
+        margin: 0px -19px 20px -19px;
+    }
 
 }
 
