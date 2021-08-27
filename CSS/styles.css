@@ -133,19 +133,12 @@ footer a:visited {
 }
 
 
-
-
-/*large desktop*/ 
-
-@media (min-width: 1200px) {
-    
-
-}
-
 /*desktop*/ 
 
-@media (min-width: 992px) and (max-width: 1199px) {
-    
+@media (min-width: 992px) {
+    header {
+        font-size: 20px;
+    }    
 }
 
 /*tablet*/
@@ -155,11 +148,11 @@ footer a:visited {
         font-size: 50px;
         font-weight: 700;
         text-align: center;
-        margin: -40px -19px -60px -19px;
+        margin: -40px -26px -60px -19px;
     }
 
     .searchSection {
-        margin: 0px -19px;
+        margin: 0px -26px;
     }
 
     #location {
@@ -214,7 +207,7 @@ footer a:visited {
     }
 
     #restaurants {
-        margin: 30px -19px;
+        margin: 30px -26px;
         height: 750px;
     }
 
@@ -306,7 +299,7 @@ footer a:visited {
 @media only screen and (min-width: 350px) and (max-width: 767px) {
     header {
         font-size: 15px;
-        margin: auto -19px;
+        margin: auto -23px;
     }
 
     header h1 {
@@ -315,7 +308,7 @@ footer a:visited {
     }
 
     .searchSection {
-        margin: -17px -19px;
+        margin: -17px -23px;
     }
 
     #location {
@@ -395,7 +388,7 @@ footer a:visited {
     }
 
     #restaurants {
-        margin: 20px -19px;
+        margin: 20px -23px;
         height: 1310px;
     }
 
