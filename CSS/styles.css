@@ -1,3 +1,5 @@
+/*Page d'acceuil*/
+
 header {
     font-family: 'Shrikhand', cursive;
     font-style: italic;
@@ -13,12 +15,12 @@ a {
 
 header {
     z-index: 3;
-    box-shadow: 0 8px #0000002e;
 }
 
 #location {
     display: flex;
-    background-color: rgb(234, 234, 234);    
+    background-color: rgb(234, 234, 234); 
+    box-shadow: 0px 3px 3px #73737338 inset;   
 }
 
 #reservation {
@@ -35,6 +37,31 @@ header {
     font-size: 15px;
     font-weight: 700;
     color: white;
+}
+
+#restaurants a {
+    list-style: none;
+    color: black;
+}
+
+#restaurants a:link {
+    color: #9356DC;
+}
+
+#restaurants a:visited {
+    color: black;
+}
+
+#restaurants a:focus {
+    color: #9356DC;
+}
+
+#restaurants a:hover {
+    color: #9356DC;
+}
+
+#restaurants a:active {
+    color: #9356DC;
 }
 
 .option {
@@ -132,6 +159,12 @@ footer a:visited {
     display: flex;
 }
 
+/*Page Menu*/
+
+.fleche {
+    margin: 0px 0px 0px 0px;
+    color: black;
+}
 
 /*desktop*/ 
 
@@ -203,14 +236,20 @@ footer a:visited {
     #listeRestau {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 10%;
     }
 
     .descriptionRestau {
-        width: 40%;
+        width: 100%;
         margin-left: 6%;
         margin-top: 15px;
         height: 270px;
         margin-bottom: 30px;
+    }
+
+    #restaurants a {
+        width: 40%;
+        margin-right: 40px;
     }
 
     .descriptionRestau img {
@@ -316,10 +355,6 @@ footer a:visited {
         font-size: 20px;
     }
 
-    #fonctionnement h2 {
-        margin-left: 10px;
-    }
-
     .option {
         height: 70px;
         margin-bottom: 30px;
@@ -353,14 +388,20 @@ footer a:visited {
     #listeRestau {
         display: flex;
         flex-wrap: wrap;
+        margin-left: 10%;
     }
 
     .descriptionRestau {
-        width: 40%;
+        width: 100%;
         margin-left: 6%;
         margin-top: 15px;
         height: 270px;
         margin-bottom: 30px;
+    }
+
+    #restaurants a {
+        width: 40%;
+        margin-right: 40px;
     }
 
     .descriptionRestau img {
@@ -438,7 +479,6 @@ footer a:visited {
 @media only screen and (min-width: 350px) and (max-width: 767px) {
     header {
         font-size: 15px;
-        margin: auto -23px;
     }
 
     header h1 {
