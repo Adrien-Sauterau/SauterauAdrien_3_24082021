@@ -105,6 +105,30 @@ header {
     box-shadow: 0 0 16px #0000002e;
 }
 
+.nouveau {
+    position: absolute;
+    background-color: #99E2D0;
+    color: #1b6150;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.nouveau1 {
+    top: 56rem;
+    right: 1rem;
+}
+
+.nouveau2 {
+    top: 74.5rem;
+    right: 1rem;
+}
+
+.nouveau p {
+    margin: 4px 1px 1px 1px;
+}
+
 .restauTexte {
     display: flex;
 }
@@ -162,13 +186,20 @@ footer a:visited {
 /*Page Menu*/
 
 .fleche {
-    margin: 0px 0px 0px 0px;
-    color: black;
+    position: absolute;
 }
 
 /*desktop*/ 
 
-@media (min-width: 992px) {
+#menuEPD {
+    background-color: rgb(234, 234, 234);
+}
+
+@media (min-width: 992px){ 
+    header h1 {
+        margin-left: 20px;
+    }
+
     body {
         max-width: 1440px;
         margin: auto;
@@ -658,4 +689,29 @@ footer a:visited {
         margin: 14px 7px 0px 0px;
     }
 
+
+    /*Page Menu */
+    
+    .fleche {
+        font-size: 20px;
+        top: 28px;
+        left: 21px;
+    }
+
+    .imgMenu {
+        width: 108%;
+        margin: -20px 0px -8px -8px;
+        position: relative;
+    }
+
+    .imgMenu img {
+        width: 100%;
+    }
+
+    #menuEPD {
+        width: 108%;
+        height: 500px;
+        z-index: 12;
+        margin: 0px 0px 0px -8px;
+    }
 }
