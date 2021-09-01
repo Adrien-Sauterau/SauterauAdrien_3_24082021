@@ -201,6 +201,18 @@ footer a:visited {
     box-shadow: 0 0 16px #0000002e;
 }
 
+#commander {
+    background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
+    border-radius: 70px;
+    box-shadow: 0 0 16px #0000002e; 
+}
+
+#commander p {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
 /*desktop*/ 
 
 #menuEPD {
@@ -768,4 +780,12 @@ footer a:visited {
     .menuTitreDesc {
         margin-left: 10px;
     }
+
+    #commander {
+        width: 30%;
+        height: 50px;
+        margin: 30px 0px 0px 30%;
+        padding: 1px 0px 0px 35px;
+    }
+
 }
