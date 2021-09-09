@@ -1,5 +1,55 @@
 /*Page d'acceuil*/
 
+#loader {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(234, 234, 234);
+    animation: loader 3s ease-in-out normal forwards;
+}
+
+#loaderAnim {
+    border: 10px solid white;
+    border-top: 10px solid #9356DC;
+    border-right: 10px solid #FF79DA;
+    border-bottom: 10px solid #99E2D0;
+    border-left: 10px solid white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    position: fixed;
+    z-index: 100;
+    top: 0; left: 0; right: 0; bottom: 0;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader {
+    0% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
 header {
     font-family: 'Shrikhand', cursive;
     font-style: italic;
@@ -424,13 +474,102 @@ footer a:visited {
     .mentionFooter2 i {
         margin: 14px 7px 0px 0px;
     }
+
+    /* Menu */
+
+    .fleche {
+        font-size: 30px;
+        top: 23px;
+        left: 21px;
+    }
+
+    .imgMenu {
+        width: 108%;
+        margin: -20px 0px 32px -8px;
+        position: relative;
+    }
+
+    .imgMenu img {
+        width: 50%;
+        z-index: 1;
+        margin-left: 22%;
+    }
+
+    #menuEPD {
+        width: 108%;
+        margin: -36px 0px 20px -8px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    .menuTitre {
+        display: flex;
+        width: 55%;
+        z-index: 13;
+        margin-top: -4px;
+        margin-left: 15%;
+        font-size: 15px;
+        font-weight: 700;
+        padding-left: 10%;
+    }
+
+    .menuTitre h1 {
+        margin-left: 100px;
+    }
+
+    .menuTitre i {
+        margin: 29px 0px 0px 30px;
+        font-size: 25px;
+    }
+
+    .descMenu h2 {
+        width: 60px;
+        font-weight: 300;
+        margin-left: 15px;
+        border-bottom: 2px solid #99E2D0;
+    }
+
+    .menuPlats {
+        font-size: 15px;
+        margin-bottom: 20px;
+        width: 70%;
+        margin-left: 90px;
+    }
+
+    .menuPlats h3 {
+        font-weight: 700;
+        margin-bottom: -10px;
+    }
+
+    .menuPrix {
+        position: absolute;
+        right: 20rem;
+        margin-top: 30px;
+        font-weight: 700;
+    }
+
+    .menuTitreDesc {
+        margin-left: 10px;
+    }
+
+    #commander {
+        width: 12%;
+        height: 50px;
+        margin: 30px 0px 0px 30%;
+        padding: 1px 0px 0px 72px;
+    }
+
+    footer {
+        width: 108%;
+        margin-top: -20px;
+    }
 }
 
 /*tablet*/
 
 @media (min-width: 768px) and (max-width: 991px) {
     header {
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 700;
         text-align: center;
         margin: -40px -26px -60px -19px;
@@ -577,6 +716,91 @@ footer a:visited {
 
     .mentionFooter2 i {
         margin: 14px 7px 0px 0px;
+    }
+
+    /* Menu */
+
+    .fleche {
+        font-size: 40px;
+        top: 50px;
+        left: 21px;
+    }
+
+    .imgMenu {
+        width: 108%;
+        margin: -20px 0px 32px -8px;
+        position: relative;
+    }
+
+    .imgMenu img {
+        width: 100%;
+        z-index: 1;
+    }
+
+    #menuEPD {
+        width: 108%;
+        margin: -36px 0px 20px -8px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    .menuTitre {
+        display: flex;
+        width: 55%;
+        z-index: 13;
+        margin-top: 234px;
+        margin-left: 15%;
+        font-size: 15px;
+        font-weight: 700;
+        position: absolute;
+        top: 14rem;
+        padding-left: 10%;
+    }
+
+    .menuTitre h1 {
+        margin-left: 25px;
+    }
+
+    .menuTitre i {
+        margin: 29px 0px 0px 30px;
+        font-size: 25px;
+    }
+
+    .descMenu h2 {
+        width: 60px;
+        font-weight: 300;
+        margin-left: 15px;
+        border-bottom: 2px solid #99E2D0;
+    }
+
+    .menuPlats {
+        font-size: 15px;
+        margin-bottom: 20px;
+        width: 70%;
+        margin-left: 90px;
+    }
+
+    .menuPlats h3 {
+        font-weight: 700;
+        margin-bottom: -10px;
+    }
+
+    .menuPrix {
+        position: absolute;
+        right: 11rem;
+        margin-top: 30px;
+        font-weight: 700;
+    }
+
+    .menuTitreDesc {
+        margin-left: 10px;
+    }
+
+    #commander {
+        width: 20%;
+        height: 50px;
+        margin: 30px 0px 0px 30%;
+        padding: 1px 0px 0px 72px;
     }
 
 }
@@ -787,7 +1011,7 @@ footer a:visited {
 
     #menuEPD {
         width: 108%;
-        margin: 0px 0px 0px -8px;
+        margin: 0px 0px 20px -8px;
         padding-bottom: 50px;
         position: relative;
     }
@@ -796,7 +1020,6 @@ footer a:visited {
         display: flex;
         width: 100%;
         z-index: 13;
-        margin-top: -10px;
         font-size: 15px;
         font-weight: 700;
         position: absolute;
