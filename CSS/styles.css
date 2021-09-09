@@ -343,23 +343,57 @@ footer a:visited {
 
 .valid {
     position: absolute;
+    right: 0rem;
+    z-index: -1;
     width: 60px;
     height: 77px;
     background: #99E2D0;
-    right: -3rem;
-    z-index: -1;
     border-radius: 0px 15px 15px 0px;
-    animation: roule 1.5s linear infinite;
+    cursor:pointer;
+    animation: app 1.5s linear;
+}
+
+.validAnim {
+    color: white;
+    margin: 20px 0px 0px 15px;
+    font-size: 30px;
+    animation: roule 1.5s linear;
+    cursor: pointer;
+}
+
+.menuPrix {
+    animation: decale 1.5s linear;
+}
+
+@keyframes decale {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform:translateX(-60px);
+    }
 }
 
 @keyframes roule {
     0% {
-        rotate: 0deg;
+        transform: rotate(0deg);
     }
 
     100% {
-        rotate: 360deg;
+        transform: rotate(-360deg);
     }
+}
+
+@keyframes app {
+    0% {
+        z-index: -1;
+    }
+
+    100% {
+        z-index: 0;
+    }
+    
 }
 
 /*desktop*/ 
@@ -1128,10 +1162,6 @@ footer a:visited {
 
    
 
-    .validAnim {
-        color: white;
-        margin: 20px 0px 0px 15px;
-        font-size: 30px;
-    }
+    
 
 }
