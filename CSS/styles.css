@@ -653,6 +653,11 @@ footer a:visited {
         font-size: 25px;
     }
 
+    .descMenu {
+        margin-left: 15%;
+        padding-top: 30px;
+    }
+
     .descMenu h2 {
         width: 60px;
         font-weight: 300;
@@ -672,6 +677,10 @@ footer a:visited {
         margin-bottom: -10px;
     }
 
+    .menuPrix {
+        margin: 27px 10px 0 0;
+    }
+
     .menuTitreDesc {
         margin-left: 10px;
     }
@@ -679,12 +688,11 @@ footer a:visited {
     #commander {
         width: 12%;
         height: 50px;
-        margin: 30px 0px 0px 30%;
-        padding: 1px 0px 0px 72px;
+        margin: 30px 0px 0px 44%;
+        padding: 1px 0px 0px 50px;
     }
 
     footer {
-        width: 108%;
         margin-top: -20px;
     }
 }
@@ -892,6 +900,7 @@ footer a:visited {
 
     .menuPrix {
         font-weight: 700;
+        margin: 27px 10px 0px 0px;
     }
 
     .menuTitreDesc {
