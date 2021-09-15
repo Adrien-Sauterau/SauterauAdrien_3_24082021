@@ -95,6 +95,7 @@ header {
 
 #restaurants a {
     list-style: none;
+    text-decoration: none;
     color: black;
 }
 
@@ -127,7 +128,9 @@ header {
 
 #optionFonction a {
     list-style: none;
+    text-decoration: none;
     color: black;
+    background-color: white;
 }
 
 #optionFonction a:link {
@@ -286,6 +289,8 @@ footer h4 {
 
 footer a {
     list-style: none;
+    text-decoration: none;
+    color: white;
 }
 
 footer a:visited {
