@@ -199,17 +199,6 @@ header {
     font-size: 18px;
     top: 1rem;
     right: 1rem;
-    animation: cligne 1s linear infinite;
-}
-
-@keyframes cligne {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }
 
 .nouveau p {
@@ -250,6 +239,36 @@ header {
 
 .restauTitre a:active {
     color: #9356DC;
+}
+
+.coeur1 {
+    position: absolute;
+    top: 14rem;
+    right: 1rem;
+}
+
+.coeur2 {
+    position: absolute;
+    top: 14rem;
+    right: 1rem;
+    color: #9356DC;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.coeur2:hover {
+    animation: opacity 1s linear;
+    transform-origin: bottom;
+}
+
+@keyframes opacity {
+    0%{
+       opacity: 0; 
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 footer {
@@ -311,13 +330,44 @@ footer a:visited {
 .menuTitre {
     font-family: 'Shrikhand', cursive;
     font-style: italic;
+    margin-top: -60px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    height: 70px;
+}
+
+.menu_coeur1 {
+    position: absolute;
+    top: -1rem;
+    right: 3rem;
+}
+
+.menu_coeur2 {
+    position: absolute;
+    top: -1rem;
+    right: 3rem;
+    color: #9356DC;
+    opacity: 0;
+}
+
+.menu_coeur2:hover {
+    animation: opacity 1s linear;
+    transform-origin: bottom;
+}
+
+.imgMenu img {
+    position: relative;
+    z-index: -100;
 }
 
 .menuPlats {
     display: flex;
+    justify-content: space-between;
     background-color: white;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0 0 16px #0000002e;
+    position: relative;
 }
 
 #commander {
@@ -333,35 +383,53 @@ footer a:visited {
 }
 
 #menuEPD {
-    background-color: rgb(234, 234, 234);
+    background-color: rgb(246, 246, 246);
+    margin-top: -20px;
 }
 
-.menuTitre {
-    background-color: rgb(234, 234, 234);
-    border-radius: 15px 15px 0px 0px;
+.menuPlats {
+    animation: apparition 1s linear;
 }
+
+@keyframes apparition {
+    0% {
+      top: 20px;
+      opacity: 0;
+    }
+    100% {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+
 
 .valid {
     position: absolute;
     right: 0rem;
-    z-index: -1;
     width: 60px;
     height: 77px;
     background: #99E2D0;
+    opacity: 0;
     border-radius: 0px 15px 15px 0px;
     cursor:pointer;
-    animation: app 1.5s linear;
 }
 
 .validAnim {
     color: white;
     margin: 20px 0px 0px 15px;
-    font-size: 30px;
-    animation: roule 1.5s linear;
+    font-size: 30px;    
     cursor: pointer;
 }
 
-.menuPrix {
+.valid:hover {
+    animation: app 1.5s linear;
+}
+
+.validAnim:hover {
+    animation: roule 1.5s linear;
+}
+
+.menuPrix:hover {
     animation: decale 1.5s linear;
 }
 
@@ -387,11 +455,13 @@ footer a:visited {
 
 @keyframes app {
     0% {
-        z-index: -1;
+        opacity: 0;
     }
-
+    50%{
+        opacity: 0.5;
+    }
     100% {
-        z-index: 0;
+        opacity: 1;
     }
     
 }
@@ -510,7 +580,7 @@ footer a:visited {
         font-weight: 700;
     }
 
-    .restauTexte i {
+    .coeur1, .coeur2 {
         margin: 20px 0px 0px 0px;
         font-size: 20px;
         font-weight: 100;
@@ -561,38 +631,22 @@ footer a:visited {
         left: 21px;
     }
 
-    .imgMenu {
-        width: 108%;
-        margin: -20px 0px 32px -8px;
-        position: relative;
-    }
-
     .imgMenu img {
         width: 50%;
-        z-index: 1;
-        margin-left: 22%;
+        margin-left: 25%;
     }
 
     #menuEPD {
-        width: 108%;
-        margin: -36px 0px 20px -8px;
         padding-bottom: 50px;
-        position: relative;
     }
 
     .menuTitre {
-        display: flex;
-        width: 55%;
-        z-index: 13;
-        margin-top: -4px;
-        margin-left: 15%;
-        font-size: 15px;
-        font-weight: 700;
-        padding-left: 10%;
+        width: 50%;
+        margin-left: 25%;
     }
 
     .menuTitre h1 {
-        margin-left: 100px;
+        margin-left: 20px;
     }
 
     .menuTitre i {
@@ -617,13 +671,6 @@ footer a:visited {
     .menuPlats h3 {
         font-weight: 700;
         margin-bottom: -10px;
-    }
-
-    .menuPrix {
-        position: absolute;
-        right: 24rem;
-        margin-top: 30px;
-        font-weight: 700;
     }
 
     .menuTitreDesc {
@@ -751,7 +798,7 @@ footer a:visited {
         font-weight: 700;
     }
 
-    .restauTexte i {
+    .coeur1, .coeur2 {
         margin: 20px 0px 0px 0px;
         font-size: 20px;
         font-weight: 100;
@@ -805,34 +852,15 @@ footer a:visited {
     }
 
     .imgMenu {
-        width: 108%;
-        margin: -20px 0px 32px -8px;
         position: relative;
     }
 
     .imgMenu img {
         width: 100%;
-        z-index: 1;
     }
 
     #menuEPD {
-        width: 108%;
-        margin: -36px 0px 20px -8px;
         padding-bottom: 50px;
-        position: relative;
-    }
-
-    .menuTitre {
-        display: flex;
-        width: 55%;
-        z-index: 13;
-        margin-top: 234px;
-        margin-left: 15%;
-        font-size: 15px;
-        font-weight: 700;
-        position: absolute;
-        top: 14rem;
-        padding-left: 10%;
     }
 
     .menuTitre h1 {
@@ -864,9 +892,6 @@ footer a:visited {
     }
 
     .menuPrix {
-        position: absolute;
-        right: 11rem;
-        margin-top: 30px;
         font-weight: 700;
     }
 
@@ -1015,7 +1040,7 @@ footer a:visited {
         font-weight: 700;
     }
 
-    .restauTexte i {
+    .coeur1, .coeur2 {
         margin: 20px 0px 0px 0px;
         font-size: 20px;
         font-weight: 100;
@@ -1090,7 +1115,6 @@ footer a:visited {
 
     .imgMenu img {
         width: 100%;
-        z-index: 1;
     }
 
     .descMenu {
@@ -1100,17 +1124,6 @@ footer a:visited {
     #menuEPD {
         width: 100%;
         padding-bottom: 50px;
-        position: relative;
-    }
-
-    .menuTitre {
-        display: flex;
-        width: 100%;
-        z-index: 13;
-        font-size: 15px;
-        font-weight: 700;
-        position: absolute;
-        top: 12rem;
     }
 
     .menuTitre h1 {
@@ -1143,10 +1156,8 @@ footer a:visited {
     }
 
     .menuPrix {
-        position: absolute;
-        right: 1rem;
-        margin-top: 30px;
         font-weight: 700;
+        margin: 28px 10px 0px 0px;
     }
 
     .menuTitreDesc {
