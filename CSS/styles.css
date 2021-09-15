@@ -389,6 +389,7 @@ footer a:visited {
 
 .menuPlats {
     animation: apparition 1s linear;
+    text-overflow: ellipsis;
 }
 
 @keyframes apparition {
@@ -405,32 +406,31 @@ footer a:visited {
 
 .valid {
     position: absolute;
-    right: 0rem;
-    width: 60px;
+    display: flex;
+    right: 0;
+    width: 0px;
     height: 77px;
     background: #99E2D0;
-    opacity: 0;
     border-radius: 0px 15px 15px 0px;
     cursor:pointer;
+    font-size: 0px;
 }
 
 .validAnim {
     color: white;
-    margin: 20px 0px 0px 15px;
-    font-size: 30px;    
+    margin: 22px 0px 0px 15px;    
     cursor: pointer;
 }
 
-.valid:hover {
-    animation: app 1.5s linear;
+.menuPlats:hover .valid {
+    animation: app 1.5s;
 }
 
-.validAnim:hover {
-    animation: roule 1.5s linear;
+.menuPlats:hover .menuPrix {
+    animation: decale 1.5s;
 }
-
-.menuPrix:hover {
-    animation: decale 1.5s linear;
+.menuPlats:hover .validAnim {
+    animation: roule 1.5s;
 }
 
 @keyframes decale {
@@ -443,27 +443,26 @@ footer a:visited {
     }
 }
 
+@keyframes app {
+    0% {
+        width: 0px;
+        font-size: 0px;
+    }
+
+    100% {
+        width: 60px;
+        font-size: 30px;
+    }
+}
+
 @keyframes roule {
     0% {
         transform: rotate(0deg);
     }
 
     100% {
-        transform: rotate(-360deg);
+        transform: rotate(360deg);
     }
-}
-
-@keyframes app {
-    0% {
-        opacity: 0;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-    
 }
 
 /*desktop*/ 
@@ -1145,7 +1144,7 @@ footer a:visited {
     .menuPlats {
         font-size: 15px;
         margin-bottom: 20px;
-        width: 94%;
+        width: 90%;
         margin-left: 10px;
         position: relative;
     }
