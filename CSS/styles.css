@@ -87,6 +87,10 @@ header {
     box-shadow: 0 0 16px #0000002e; 
 }
 
+#boutonExplo:hover {
+    box-shadow: 0 0 16px black;
+}
+
 #boutonExplo p {
     font-size: 15px;
     font-weight: 700;
@@ -190,6 +194,7 @@ header {
     box-shadow: 0 0 16px #0000002e;
     position: relative;
     z-index: 0;
+    width: 40%;
 }
 
 .nouveau {
@@ -246,32 +251,31 @@ header {
 
 .coeur1 {
     position: absolute;
-    top: 14rem;
+    top: 13rem;
     right: 1rem;
+    opacity: 1;
+    transform-origin: bottom;
+    cursor: pointer;
 }
 
 .coeur2 {
     position: absolute;
-    top: 14rem;
+    top: 13rem;
     right: 1rem;
     color: #9356DC;
     opacity: 0;
     cursor: pointer;
-}
-
-.coeur2:hover {
-    animation: opacity 1s linear;
     transform-origin: bottom;
 }
 
-@keyframes opacity {
-    0%{
-       opacity: 0; 
-    }
+.coeur2:hover {
+    opacity: 1;
+    transition: opacity 1s;
+    color: #9356DC;
+}
 
-    100%{
-        opacity: 1;
-    }
+#commander {
+    padding-top: 1px;
 }
 
 footer {
@@ -335,17 +339,27 @@ footer a:visited {
 .menuTitre {
     font-family: 'Shrikhand', cursive;
     font-style: italic;
-    margin-top: -60px;
+    margin-top: -100px;
     background-color: rgb(246, 246, 246);
     border-radius: 25px 25px 0px 0px;
     position: relative;
     height: 70px;
+    text-overflow: ellipsis;
 }
+
+.menuTitreDesc p {
+    text-overflow: ellipsis;
+}
+
+
 
 .menu_coeur1 {
     position: absolute;
     top: -1rem;
     right: 3rem;
+    opacity: 1;
+    transform-origin: bottom;
+    cursor: pointer;
 }
 
 .menu_coeur2 {
@@ -354,11 +368,14 @@ footer a:visited {
     right: 3rem;
     color: #9356DC;
     opacity: 0;
+    transform-origin: bottom;
+    cursor: pointer;
 }
 
 .menu_coeur2:hover {
-    animation: opacity 1s linear;
-    transform-origin: bottom;
+    opacity: 1;
+    transition: opacity 1s;
+    color: #9356DC;
 }
 
 .imgMenu img {
@@ -379,6 +396,11 @@ footer a:visited {
     background: linear-gradient(175deg, #FF79DA 5%, #9356DC 95%);
     border-radius: 70px;
     box-shadow: 0 0 16px #0000002e; 
+    text-align: center;
+}
+
+#commander:hover {
+    box-shadow: 0 0 16px black;
 }
 
 #commander p {
@@ -428,14 +450,14 @@ footer a:visited {
 }
 
 .menuPlats:hover .valid {
-    animation: app 1.5s;
+    animation: app 1.5s forwards;
 }
 
 .menuPlats:hover .menuPrix {
-    animation: decale 1.5s;
+    animation: decale 1.5s forwards;
 }
 .menuPlats:hover .validAnim {
-    animation: roule 1.5s;
+    animation: roule 1.5s forwards;
 }
 
 @keyframes decale {
@@ -478,7 +500,6 @@ footer a:visited {
     }
 
     body {
-        max-width: 1440px;
         margin: auto;
     }
 
@@ -516,8 +537,8 @@ footer a:visited {
     .option {
         height: 70px;
         margin-bottom: 30px;
-        width: 30%;
-        margin-left: 5%;
+        width: 28%;
+        margin-left: 4%;
     }
 
     .rond {
@@ -538,9 +559,7 @@ footer a:visited {
         margin: 26px 0px 0px 25px;
     }
 
-    #restaurants {
-        height: 750px;
-    }
+    
 
     #listeRestau {
         display: flex;
@@ -549,11 +568,13 @@ footer a:visited {
     }
 
     .descriptionRestau {
-        width: 100%;
-        margin-left: 6%;
+        margin-right: 10%;
         margin-top: 15px;
-        height: 270px;
-        margin-bottom: 30px;
+    }
+
+
+    #restaurants {
+        padding-bottom: 30px;
     }
 
     #restaurants a {
@@ -588,6 +609,7 @@ footer a:visited {
         margin: 20px 0px 0px 0px;
         font-size: 20px;
         font-weight: 100;
+        top: 17rem;
     }
 
     footer {
@@ -636,8 +658,7 @@ footer a:visited {
     }
 
     .imgMenu img {
-        width: 50%;
-        margin-left: 25%;
+        width: 100%;
     }
 
     #menuEPD {
@@ -659,7 +680,6 @@ footer a:visited {
     }
 
     .descMenu {
-        margin-left: 15%;
         padding-top: 30px;
     }
 
@@ -674,7 +694,7 @@ footer a:visited {
         font-size: 15px;
         margin-bottom: 20px;
         width: 70%;
-        margin-left: 90px;
+        margin-left: 15%;
     }
 
     .menuPlats h3 {
@@ -694,26 +714,21 @@ footer a:visited {
         width: 12%;
         height: 50px;
         margin: 30px 0px 0px 44%;
-        padding: 1px 0px 0px 50px;
     }
 
-    footer {
-        margin-top: -20px;
-    }
 }
 
 /*tablet*/
 
 @media (min-width: 768px) and (max-width: 991px) {
     header {
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 700;
         text-align: center;
-        margin: -40px -26px -60px -19px;
     }
 
     .searchSection {
-        margin: 0px -26px;
+        width: 100%;
     }
 
     #location {
@@ -728,6 +743,10 @@ footer a:visited {
         padding-top: 10px;
         padding-bottom: 50px;
         text-align: center;
+    }
+
+    #fonctionnement h2 {
+        margin-left: 20px;
     }
 
     #boutonExplo {
@@ -764,19 +783,19 @@ footer a:visited {
     }
 
     #restaurants {
-        margin: 30px -26px;
-        height: 750px;
+        width: 100%;
+        padding-bottom: 30px;
     }
+  
 
     #listeRestau {
         display: flex;
         flex-wrap: wrap;
-        margin-left: 10%;
     }
 
     .descriptionRestau {
-        width: 100%;
-        margin-left: 6%;
+        width: 90%;
+        margin-left: 5%;
         margin-top: 15px;
         height: 270px;
         margin-bottom: 30px;
@@ -817,9 +836,7 @@ footer a:visited {
     }
 
     footer {
-        width: 102%;
-        margin: -30px 0px -8px -8px;
-        padding: 0px 0px 0px 20px;
+        width: 100%;
         text-align: center;
     }
 
@@ -895,7 +912,7 @@ footer a:visited {
         font-size: 15px;
         margin-bottom: 20px;
         width: 70%;
-        margin-left: 90px;
+        margin-left: 15%;
     }
 
     .menuPlats h3 {
@@ -916,7 +933,6 @@ footer a:visited {
         width: 20%;
         height: 50px;
         margin: 30px 0px 0px 30%;
-        padding: 1px 0px 0px 72px;
     }
 
 }
@@ -1141,6 +1157,8 @@ footer a:visited {
 
     .menuTitre h1 {
         margin-left: 25px;
+        padding-top: 10px;
+        font-size: 25px;
     }
 
     .menuTitre i {
@@ -1159,7 +1177,7 @@ footer a:visited {
         font-size: 15px;
         margin-bottom: 20px;
         width: 90%;
-        margin-left: 10px;
+        margin-left: 5%;
         position: relative;
     }
 
@@ -1181,7 +1199,6 @@ footer a:visited {
         width: 30%;
         height: 50px;
         margin: 30px 0px 0px 30%;
-        padding: 1px 0px 0px 35px;
     }
 
    
