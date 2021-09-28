@@ -416,6 +416,9 @@ footer a:visited {
 
 .menuPlats {
     animation: apparition 1s linear;
+}
+
+.menuTitreDesc p,h3 {
     text-overflow: ellipsis;
 }
 
@@ -436,7 +439,7 @@ footer a:visited {
     display: flex;
     right: 0;
     width: 0px;
-    height: 77px;
+    height: 100%;
     background: #99E2D0;
     border-radius: 0px 15px 15px 0px;
     cursor:pointer;
@@ -451,6 +454,7 @@ footer a:visited {
 
 .menuPlats:hover .valid {
     animation: app 1.5s forwards;
+
 }
 
 .menuPlats:hover .menuPrix {
@@ -495,6 +499,10 @@ footer a:visited {
 /*desktop*/ 
 
 @media (min-width: 992px){ 
+    body {
+        max-width: 1450px;
+    }
+    
     header h1 {
         text-align: center;
     }
@@ -1174,10 +1182,10 @@ footer a:visited {
     }
 
     .menuPlats {
-        font-size: 15px;
+        font-size: 13px;
         margin-bottom: 20px;
-        width: 90%;
-        margin-left: 5%;
+        width: 80%;
+        margin-left: 10%;
         position: relative;
     }
 
