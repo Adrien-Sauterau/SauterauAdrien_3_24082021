@@ -89,6 +89,7 @@ header {
 
 #boutonExplo:hover {
     box-shadow: 0 0 16px black;
+    background: linear-gradient(175deg, #FF79DA 35%, #9356DC 65%);
 }
 
 #boutonExplo p {
@@ -401,6 +402,7 @@ footer a:visited {
 
 #commander:hover {
     box-shadow: 0 0 16px black;
+    background: linear-gradient(175deg, #FF79DA 35%, #9356DC 65%);
 }
 
 #commander p {
